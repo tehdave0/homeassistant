@@ -2,7 +2,7 @@ blueprint:
   name: Motion-activated light brightness
   description: Increase a lights brightness when motion is detected.
   domain: automation
-  # source_url: https://github.com/home-assistant/core/blob/dev/homeassistant/components/automation/blueprints/motion_light.yaml
+  source_url: https://github.com/tehdave0/homeassistant/edit/main/blueprints/motion_light_brightness.yaml
   input:
     motion_entity:
       name: Motion Sensor
