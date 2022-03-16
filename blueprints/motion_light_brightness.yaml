@@ -58,9 +58,9 @@ trigger:
 action:
   - alias: "Increase light brightness to motion detected level"
     service: light.turn_on
-    data:
-      brightness_pct: !input motion_detected_brightness
-      transition: 2
+    #data: 
+    brightness_pct: !input motion_detected_brightness
+    #  transition: 2
     target: !input light_target
   - alias: "Wait until there is no motion from device"
     wait_for_trigger:
@@ -72,7 +72,7 @@ action:
     delay: !input no_motion_wait
   - alias: "Decrease light brightness to no motion level"
     service: light.turn_on
-    data:
-      brightness_pct: !input no_motion_brightness
-      transition: 2
+    #data:
+    brightness_pct: !input no_motion_brightness
+    #  transition: 2
     target: !input light_target
